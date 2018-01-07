@@ -6,13 +6,13 @@ public class User {
 	private String nachName;
 
 	private String telefonnummer;
-	private String personalnummer;
+	private String email;
 
-	public User(String vorName, String nachName, String telefonnummer, String personalnummer) {
+	public User(String vorName, String nachName, String telefonnummer, String email) {
 		this.vorName = vorName;
 		this.nachName = nachName;
 		this.telefonnummer = telefonnummer;
-		this.personalnummer = personalnummer;
+		this.email = email;
 	}
 
 	public String getVorName() {
@@ -39,12 +39,12 @@ public class User {
 		this.telefonnummer = telefonnummer;
 	}
 
-	public String getPersonalnummer() {
-		return personalnummer;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setPersonalnummer(String personalnummer) {
-		this.personalnummer = personalnummer;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	
