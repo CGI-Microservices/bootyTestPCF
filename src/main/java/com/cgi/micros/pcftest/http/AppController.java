@@ -33,7 +33,7 @@ public class AppController {
 	@RequestMapping(value="/user", method = RequestMethod.POST)
     public HashMap<UUID, User> administrateUser(@RequestParam(value="vorName") String vorName,
     												@RequestParam(value="nachName") String nachName,
-    														@RequestParam(value="telfonnummer") String telefonnummer,
+    														@RequestParam(value="telefonnummer") String telefonnummer,
     															@RequestParam(value="email") String email) {
 	   if(!vorName.isEmpty() && !nachName.isEmpty()) {
 	       User user = new User(vorName, nachName, telefonnummer, email);
